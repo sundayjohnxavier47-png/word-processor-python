@@ -20,7 +20,7 @@ def fix_punctuation_space(text):
             result.append(char)
             if i + 1 < len(text):
                 next_char = text[i+1]
-                if next_char != " " and next_char != "\n" and next_char not punctuations:
+                if next_char != " " and next_char != "\n" and next_char not in  punctuations:
                     result.append(" ")
         else:
             result.append(char)
