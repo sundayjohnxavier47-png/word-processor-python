@@ -4,17 +4,20 @@ def fix_quotes(text):
     double_open = True
     single_open = True
 
-    for i in range(len(text)):
+    i = 0 
+    while i < len(text)
         char = text[i]
 
         if char == '"' or char ==  "'":
             is_double = (char == '"')
             is_open = (is_double and double_open) or ( not is_double and single_open)
-
             if is_open:
                 result.append(char)
-                while i + 1 < len(text) and text[i+1] == " ":
-                    i = i + 1
+                i += 1
+                while i < len(text) and text[i] == " ":
+                    i += 1
+                    continue
+
             else:
                 while len(result) > 0 and result[-1] == " ":
                     result.pop()
@@ -27,5 +30,7 @@ def fix_quotes(text):
 
         else:
             result.append(char)
+            
+        i += 1
         
     return "".join(result)
