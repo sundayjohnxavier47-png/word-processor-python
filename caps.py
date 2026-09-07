@@ -6,6 +6,10 @@ def capitalize(text):
     for i in range(len(text)):
         char = result[i]
 
+        if char == "\n":
+            capitalize_next = True
+            continue
+
         if char.isspace():
             continue
         
@@ -15,7 +19,7 @@ def capitalize(text):
         elif not char.isspace():
             capitalize_next = False
 
-        if char == "." or char == "!" or char == "?" or char == "\n":
+        if char == "." or char == "!" or char == "?":
              capitalize_next = True
 
     return "".join(result)

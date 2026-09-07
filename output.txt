@@ -1,0 +1,15 @@
+Hello, world!
+This is a test.
+Wait... Really?
+Multiple spaces before, commas.
+...
+He said "no", then left.
+New paragraph starts here
+ This line has leading spaces and should still capitalize
+One more sentence here! And another right after.
+He said "no" and left.
+She replied 'fine, i will go' then smiled.
+The sign read "do not enter" in bold letters.
+He whispered 'quiet', 'very quiet'.
+"already correct" said no one.
+Mixed case: he said "yes" and she said 'no' too.
